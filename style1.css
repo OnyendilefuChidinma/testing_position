@@ -1,0 +1,79 @@
+:root{
+
+    --bg-color: green;
+    --side-color: red;
+    --first-color: rgb(246, 123, 144);
+    --left-color: yellow;
+    --third-color: purple;
+    --card-color: rgb(0, 126, 128);
+
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.first-layer{
+    background-color: var(--first-color);
+    width: 100%;
+    height: 480px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.second-layer{
+    display: flex;
+    background-color: var(--bg-color);
+    gap: 48px;
+    padding: 32px;
+    position: relative;
+}
+
+aside{
+    background-color: var(--side-color);
+    height: 240px;
+    width: 20%;
+    position: sticky;
+    top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-sideLayer{
+    background-color: var(--left-color);
+    height: 1200px;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.third-layer{
+    display: flex;
+    background-color: var(--third-color);
+    gap: 24px;
+    padding: 32px;
+    max-width: 100%;
+    overflow-x: auto;
+    /* height: 100vh; */
+}
+
+.small-card{
+    background-color: var(--card-color);
+    min-width: 320px;
+    height: 240px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 24px;
+    color: #f0f0f0;
+}
+
+.third-layer::-webkit-scrollbar {
+    display: none;
+  }
